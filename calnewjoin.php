@@ -5,17 +5,17 @@ if($_POST)
     $operation = $_POST['operation'];
     $number1 = $_POST['number1'];
     $number2 = $_POST['number2'];
-    if ($operation == "+") {
+    if ($operation == "add") {
         $x = $number1 + $number2;
     }
-    if ($operation == "-") {
+    if ($operation == "sub") {
         $x = $number1 - $number2;
     }
 
-    if ($operation == "x") {
+    if ($operation == "mul") {
         $x = $number1 * $number2;
     }
-    if ($operation == "/") {
+    if ($operation == "div") {
         $x = $number1 / $number2;
     }
     if ($operation == "%") {
@@ -34,17 +34,11 @@ if($_POST)
 }
 if($_POST) {
 
-    if ($operation == "%" && $x % 2 != 0) {
+    if ($operation == "%" && $x % 2 == 0) {
         echo "we get devidend";
     }
 }
 ?>
 <br>
 <a href="calnew.php">Put value again</a>
-
-
-
-
-
-
 

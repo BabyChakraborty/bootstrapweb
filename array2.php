@@ -20,3 +20,4 @@ function is_odd($number)
             return "odd number";
         }
     }
+}
